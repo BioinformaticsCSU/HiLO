@@ -1,0 +1,34 @@
+HiLO algorithm could conduct drug-disease predictions on two datasets: Fdataset_ms and Cdataset_ms, which can be loaded by matlab.
+
+(1) Fdataset_ms
+Wrname: the DrugBank IDs of drugs;
+
+Wdname: the OMIM IDs of diseases;
+
+drug_AtcS: drug's ATC code similarity matrix;
+
+drug_TargetS: drug's target profile similarity matrix;
+
+disease_PhS: disease phenotype similarity matrix;
+
+disease_DoS: disease ontology similarity matrix;
+
+didr: disease-drug association matrix.
+
+(2) Cdataset_ms
+Wrname: the DrugBank IDs of drugs;
+
+Wdname: the OMIM IDs of diseases;
+
+drug_AtcS: drug's ATC code similarity matrix;
+
+drug_TargetS: drug's target profile similarity matrix;
+
+disease_PhS: disease phenotype similarity matrix;
+
+disease_DoS: disease ontology similarity matrix;
+
+didr: disease-drug association matrix.
+
+
+We collected drug_AtcS, drug_TargetS, and disease_DoS for Fdataset_ms and Cdataset_ms.
