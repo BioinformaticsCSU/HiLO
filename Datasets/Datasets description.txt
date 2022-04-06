@@ -1,4 +1,4 @@
-HiLO algorithm could conduct drug-disease predictions on two datasets: Fdataset_ms and Cdataset_ms, which can be loaded by matlab.
+LRTM algorithm could conduct drug-disease predictions on two datasets: Fdataset_ms and Cdataset_ms, which can be loaded by matlab.
 
 (1) Fdataset_ms
 Wrname: the DrugBank IDs of drugs;
