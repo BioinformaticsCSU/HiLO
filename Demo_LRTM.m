@@ -7,12 +7,9 @@ A_DR = didr;
 R = (drug_AtcS+drug_TargetS)/2;
 D = (disease_PhS+disease_DoS)/2;
 
-%% 2. HGIMC algorithm
+%% 2. LRTM algorithm
 alpha = 15; 
 beta = 20; 
-
-
-% 2.3 Heterogeneous Graph Inference 
-A_recovery = HiLO(A_DR',alpha,beta, R, D);
+A_recovery = LRTM(A_DR',alpha,beta, R, D);
 
 
