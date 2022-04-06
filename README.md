@@ -1,14 +1,14 @@
-# HiLO
-Drug repositioning has gained widespread attention as an effective strategy to look for new uses for existing drugs. The primary advantage of drug repositioning over traditional drug development is that it can effectively reduce the costs and time among the development and significantly reduce the risk of adverse effects and attrition in the clinical phase. Link prediction via linear optimization(LO) based on homogeneous network is the most recent proposed link prediction method, which has high prediction performance and fast convergence. Homogeneous network greatly simplify our processing procedure for it stripes other information and only cares about the direct links between objects, but it is also prone to loss of information. In this article, we propose a simple and efficient matrix completion method, link prediction in heterogeneous information networks via linear optimization (HiLO), to predict the potential indications for approved and new drugs. 
+# LRTM
+Motivation: Molecular interactions are central to most biological processes. The discovery and identification of potential associations between molecules can provide insights into biological exploration, diagnostic and therapeutic interventions, and drug development. So far many relevant computational methods have been proposed, but most of them are usually limited to specific domains and rely on complex preprocessing procedures, which restricts the models’ ability to be applied to other tasks. Therefore, it remains a challenge to explore a generalized approach to accurately predicting potential associations. Results: In this study, We propose Left-Right Transition Matrices (LRTM) for link prediction in molecular bipartite networks. From the perspective on the diffusion model, we construct two transition matrices to model undirected graph information propagation. This allows modeling the transition probabilities of links, which facilitates link prediction in molecular bipartite networks. The extensive experimental results show that the proposed LRTM algorithm performs better than the compared methods in link prediction. Also, the proposed algorithm has the potential for cross-task prediction. Furthermore, case studies show that LRTM is a powerful tool that can be effectively applied to practical applications.
 
 
 # Requirements
 * Matlab >= 2014
 
 # Installation
-HiLO can be downloaded by
+LRTM can be downloaded by
 ```
-git clone https://github.com/BioinformaticsCSU/HiLO
+git clone https://github.com/BioinformaticsCSU/LRTM
 ```
 Installation has been tested in a Windows platform.
 
@@ -22,11 +22,11 @@ Installation has been tested in a Windows platform.
 * didr: disease-drug association matrix.
 
 # Functions Description
-* ```HiLO.m```: this function can implement the HiLO algorithm;
+* ```LRTM.m```: this function can implement the LRTM algorithm;
 
 
 # Instructions
-We provide detailed step-by-step instructions for running HiLO model.
+We provide detailed step-by-step instructions for running LRTM model.
 
 **Step 1**: add datasets\functions paths
 ```
@@ -49,25 +49,25 @@ beta = 20;
 
 ```
 
-**Step 4**: run the HiLO algorithm
+**Step 4**: run the LRTM algorithm
 ```
-A_recovery = HiLO(A_DR',alpha,beta, R, D);
+A_recovery = LRTM(A_DR',alpha,beta, R, D);
 ```
 
 # A Quickstart Guide
-Users can immediately start playing with HGIMC running ```Demo_HiLO.m``` in matlab.
-* ```Demo_HiLO.m```: it demonstrates a process of predicting drug-disease associations on Fdataset_ms by HiLO algorithm.
+Users can immediately start playing with LRTM running ```Demo_LRTM.m``` in matlab.
+* ```Demo_LRTM.m```: it demonstrates a process of predicting drug-disease associations on Fdataset_ms by LRTM algorithm.
 
-# Run HiLO on User's Own Data
-We provided instructions on implementing HiLO model with user's own data. One could directly run HiLO model in ```Demo_HiLO.m``` with custom data by the following instructions.
+# Run LRTM on User's Own Data
+We provided instructions on implementing LRTM model with user's own data. One could directly run LRTM model in ```Demo_LRTM.m``` with custom data by the following instructions.
 
 **Step 1**: Prepare your own data and add into the ```Datasets``` folder
 
 The required data includes drug-disease association matirx and similarity matrices, which are all saved by ```mat``` files.
 
-**Step 2**: Modify four lines in ```Demo_HiLO.m```
+**Step 2**: Modify four lines in ```Demo_LRTM.m```
 
-You can find ```Fdataset_ms, A_DR, R, D``` in ```Demo_HiLO.m```. All you need to do is to replace them with your own data.
+You can find ```Fdataset_ms, A_DR, R, D``` in ```Demo_LRTM.m```. All you need to do is to replace them with your own data.
 
 
 
