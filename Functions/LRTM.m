@@ -1,4 +1,4 @@
-function [Matrix_, W1, W2] = FNNM_addLO(R_Omega, alpha, beta ,Sr,Sd)
+function [Matrix_, W1, W2] = LRTM(R_Omega, alpha, beta ,Sr,Sd)
 
 maxiter=30;
 
